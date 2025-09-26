@@ -18,56 +18,58 @@ const (
 // Those keys can be found in the official Apple documentation
 // here - https://developer.apple.com/documentation/devicemanagement/skipkeys
 var skipAllSetup = []string{
-	"Accessibility",
-	"ActionButton",
-	"Android",
-	"Appearance",
-	"AppleID",
-	"AppStore",
-	"Biometric",
-	"CameraButton",
-	"DeviceToDeviceMigration",
-	"Diagnostics",
-	"EnableLockdownMode",
-	"FileVault",
-	"iCloudDiagnostics",
-	"iCloudStorage",
-	"iMessageAndFaceTime",
-	"Intelligence",
-	"Keyboard",
-	"Location",
-	"MessagingActivationUsingPhoneNumber",
-	"Passcode",
-	"Payment",
-	"Privacy",
-	"Restore",
-	"RestoreCompleted",
-	"Safety",
-	"ScreenSaver",
-	"ScreenTime",
-	"SIMSetup",
-	"Siri",
-	"SoftwareUpdate",
-	"SpokenLanguage",
-	"TapToSetup",
-	"TermsOfAddress",
-	"TOS",
-	"TVHomeScreenSync",
-	"TVProviderSignIn",
-	"TVRoom",
-	"UpdateCompleted",
-	"WatchMigration",
-	"Welcome",
-	// Deprecated keys
-	// Deprecated in iOS 15
-	"DisplayTone",
-	// Deprecated in iOS 15, was used only on iPhone 7, 7 Plus, 8, 8 Plus and SE
-	"HomeButtonSensitivity",
-	// Deprecated in iOS 14
-	"OnBoarding",
-	// Deprecated in iOS 17
-	"Zoom",
+    "Accessibility",
+    "ActionButton",
+    "Android",
+    "Appearance",
+    "AppleID",
+    "AppStore",
+    "Biometric",
+    "CameraButton",
+    "DeviceToDeviceMigration",
+    "Diagnostics",
+    "EnableLockdownMode",
+    "FileVault",
+    "iCloudDiagnostics",
+    "iCloudStorage",
+    "iMessageAndFaceTime",
+    "Intelligence",
+    "Keyboard",
+    "Location",
+    "MessagingActivationUsingPhoneNumber",
+    "Passcode",
+    "Payment",
+    "Privacy",
+    "Restore",
+    "RestoreCompleted",
+    "Safety",
+    "ScreenSaver",
+    "ScreenTime",
+    "SIMSetup",
+    "Siri",
+    "SoftwareUpdate",
+    "SpokenLanguage",
+    "TapToSetup",
+    "TermsOfAddress",
+    "TOS",
+    "TVHomeScreenSync",
+    "TVProviderSignIn",
+    "TVRoom",
+    "UpdateCompleted",
+    "WatchMigration",
+    "Welcome",
+
+    // 🆕 iOS/iPadOS 26+
+    "OSShowcase",
+    "Multitasking",
+
+    // Deprecated keys
+    //"DisplayTone",             // Deprecated in iOS 15
+    //"HomeButtonSensitivity",   // Deprecated in iOS 15
+    //"OnBoarding",              // Deprecated in iOS 14
+    //"Zoom",                    // Deprecated in iOS 17
 }
+
 
 // GetAllSetupSkipOptions returns a list of all possible values you can skip during device preparation
 func GetAllSetupSkipOptions() []string {
